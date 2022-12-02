@@ -42,7 +42,7 @@ const MajorDetail = () => {
     // 페이지 핸들링 함수
     const handlePageChange =(page)=>{
         setPage(page)
-    }
+    } 
 
 
     return ( 
@@ -54,7 +54,7 @@ const MajorDetail = () => {
             </div>
             {
     idFilter.slice(
-        10*(page-1),
+        10*(page-1),  
         10*(page-1)+10 
     ).map((item, majorid)=>{     
         if(!( majorid >= limit && majorid <10+limit )) {
@@ -69,7 +69,7 @@ const MajorDetail = () => {
             
             <h4>{item.사업장}</h4>
             <p>{item.주소}</p> 
-        <div className="detail__box2">
+        <div className="detail__box2"> 
             <div>의료인수 <br />
             {item.의료인수}
             </div> 

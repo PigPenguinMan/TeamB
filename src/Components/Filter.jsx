@@ -11,17 +11,20 @@ import { Context } from "../App";
 const Filter = () => { 
     
     const {category, setCategory} = useContext(Context);
-    const {isFilter,setIsFilter} = useState(false);
+
+    const [isFilter,setIsFilter] = useState(false);
 
 
     // 필터버튼 이벤트 함수
     const handleBtns = (e) =>{  
-        
-        let word = e.target.value;
+        setIsFilter == true ? setIsFilter(false) : setIsFilter(true);
+        let word = e.target.value; 
         if (word === 'Major') { 
-            setCategory(categorydata);  
+            setCategory(categorydata);
+            
         }else if(word === 'Place') {  
             setCategory(categorydata1);
+            
         }
         
     }
@@ -37,15 +40,16 @@ const Filter = () => {
             <button  className="filter__btn" value='Major' onClick={handleBtns}>진료별</button>
         </div>            
         
-        <div className="category__container">  
-        {           
+        <div className="category__container">         
+        {        
+        isFilter == true ? 
         category == categorydata1 ? categorydata1.map((item,i)=>{  
             return ( 
                 
-        <div key={i} className="category__box">             
+        <div key={i} className="category__box">              
             <Link className="linktext" to={'/placedetail/'+i}>
-                <span>{item.icon}</span> 
-                <h4>{item.name}</h4>     
+                <span>{item.icon}</span>  
+                <h4>{item.name}</h4>      
             </Link>  
 
         </div>  
@@ -60,9 +64,11 @@ const Filter = () => {
         </div>
             )
         })
-        
+        : null
         } 
-        </div>                
+
+        </div>        
+                
     </div>      
     
 

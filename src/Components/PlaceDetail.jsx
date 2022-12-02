@@ -13,7 +13,7 @@ const PlaceDetail = () => {
     ul { list-style: none; padding: 0; }
     ul.pagination li {
         display: inline-block;
-        width: 30px;
+        width: 30px; 
         height: 30px;
         border: 1px solid #e2e2e2;
         display: flex;
@@ -37,7 +37,7 @@ const PlaceDetail = () => {
         
 
     let {id} = useParams();
-    
+     
     // 지역별 필터링 
     const idFilter = hospitalData.filter(place=> place.주소.includes( category[id].name));
     
