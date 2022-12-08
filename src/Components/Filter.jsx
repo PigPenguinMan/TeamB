@@ -10,6 +10,7 @@ import { Context } from "../App";
 
 const Filter = () => { 
     
+
     const {category, setCategory} = useContext(Context);
 
     const [isFilter,setIsFilter] = useState(false);
@@ -27,7 +28,7 @@ const Filter = () => {
             
         }
         
-    }
+    } 
             
 
     return (  
@@ -43,21 +44,21 @@ const Filter = () => {
         <div className="category__container">         
         {        
         isFilter == true ? 
-        category == categorydata1 ? categorydata1.map((item,i)=>{  
+        category == categorydata1 ? categorydata1.map((item,id)=>{  
             return ( 
                 
-        <div key={i} className="category__box">              
-            <Link className="linktext" to={'/placedetail/'+i}>
+        <div key={id} className="category__box">              
+            <Link className="linktext" to={'/placedetail/'+id+'/'}>
                 <span>{item.icon}</span>  
-                <h4>{item.name}</h4>      
+                <h4>{item.name}</h4>       
             </Link>  
-
+                
         </div>  
             )
-        }) :   categorydata.map((item,i)=>{
+        }) :   categorydata.map((item,id)=>{
             return (
-        <div key={i} className="category__box">             
-            <Link className="linktext" to={'/majordetail/'+i}>
+        <div key={id} className="category__box">             
+            <Link className="linktext" to={'/majordetail/'+id+'/'}>
                 <span>{item.icon}</span> 
                 <h4>{item.name}</h4>   
             </Link> 
@@ -65,7 +66,7 @@ const Filter = () => {
             )
         })
         : null
-        } 
+        }  
 
         </div>        
                 

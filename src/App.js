@@ -34,12 +34,13 @@ function App() {
       
       <Routes>     
         <Route path='/' element={<Filter/>}></Route>
-        <Route path='/placedetail/:id' element={<PlaceDetail/>}></Route>
-        <Route path='/Majordetail/:id' element={<MajorDetail/>}></Route>
-        <Route path='/majordetailinfo/:id/:majorid' element={<MajorDetailInfo/>} > </Route>
-        <Route path='/placedetailinfo/:id/:placeid' element={<PlaceDetailInfo/>} > </Route>
-        <Route path='/reservation' element={<Reservation/>}></Route>
-      </Routes>
+        <Route path='/placedetail/:id/' element={<PlaceDetail/>}></Route>
+        <Route path='/Majordetail/:id/' element={<MajorDetail/>}></Route>
+        <Route path='/majordetail/:id/:majorid' element={<MajorDetailInfo/>} > </Route>
+        <Route path='/placedetail/:id/:placeid' element={<PlaceDetailInfo/>} > </Route>
+        <Route path='/reservation/:bookid' element={<Reservation/>}></Route>
+
+      </Routes> 
 
 
       

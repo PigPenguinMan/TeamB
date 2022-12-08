@@ -14,7 +14,7 @@ const PlaceDetail = () => {
     ul.pagination li {
         display: inline-block;
         width: 30px; 
-        height: 30px;
+        height: 30px; 
         border: 1px solid #e2e2e2;
         display: flex;
         justify-content: center;
@@ -35,9 +35,9 @@ const PlaceDetail = () => {
     const [limit,setLimit] = useState(0);
     const [page, setPage] = useState(1);
         
-
+    
     let {id} = useParams();
-     
+    
     // 지역별 필터링 
     const idFilter = hospitalData.filter(place=> place.주소.includes( category[id].name));
     
@@ -45,7 +45,7 @@ const PlaceDetail = () => {
     // 페이지 핸들링 함수
     const handlePageChange =(page)=>{
         setPage(page)
-    }
+    } 
 
     return (   
         <div>
@@ -53,12 +53,12 @@ const PlaceDetail = () => {
         <div className="detail__title">                
             <h4>지역별</h4>기준으로 <br />
             검색된 병원 목록입니다               
-        </div>  
+        </div>   
 
     { 
     idFilter.slice(
-        10*(page-1),
-        10*(page-1)+10  
+        10*(page-1), 
+        10*(page-1)+10   
     ).map((item, placeid)=>{    
         if(!( placeid >= limit && placeid <10+limit )) {
             return null;
@@ -66,11 +66,11 @@ const PlaceDetail = () => {
         return (             
         <div key={placeid} item={item}> 
                 
-    <Link className="linktext" to={'/placedetailInfo/'+id+'/'+placeid}>
+    <Link className="linktext" to={'/placedetail/'+id+'/'+(placeid+ 10*(page-1))}>
         
-    <div className="detail__box">  
+    <div className="detail__box">   
             
-            <h4>{item.사업장}</h4>
+            <h4>{item.사업장}</h4> 
             <p>{item.주소}</p> 
         <div className="detail__box2">
             <div>의료인수 <br />
