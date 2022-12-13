@@ -1,66 +1,63 @@
+  /* Global */
 
-.filter__container {
-  margin: 12px;
-  font-size: 20px;
-  text-align: center;
+  :root {
+    /* 변수선언 : --변수명:  */
+
+
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-green: #1b4542;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-orange: #feb546;
+    --color-black: #000000;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px; 
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+    --size-border-radius : 4px;
 }
 
-.filter__btn {
-  margin: 8px 16px;
-  padding: 16px 20px;
-  
+/* Typography */
+/* 사용법: var(변수이름) */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
 }
 
-.linktext { 
-  text-decoration: none;
-  color:  black;
-  
-}
-
-.category__box {
-  border: 2px solid  orange;
-  border-radius: 16px;
-  margin: 1px 1px;
-  
-  
-}
 h2 {
-  text-align: center;
-  
-}
-.detail__title {
-  background-color: bisque;
-  text-align: center;
-  border-radius: 16px;
-  margin: 16px;
-}
-.detail__box {
-  border: 1px solid black;
-  border-radius: 24px;
-  margin: 8px 16px;
-  padding: 8px;
-  text-align: center;
-}
-.detail__box2 {
-  display: flex;
-  justify-content: space-between;
-}
-.detail__mapbox {
-  padding: 24px;
-  height: 250px;
-  border: 1px solid black;
-}
-.detail__info {
-  margin:  24px;
-  text-align: center;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
 }
 
-.linkbox {
-  margin: 16px;
-  padding: 8px 16px;
-  text-align: center;
-  border: 1px solid black;
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
 }
-.more-btn {
-  text-align: center;
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
 }
