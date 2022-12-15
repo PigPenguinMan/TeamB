@@ -1,10 +1,13 @@
 /** 
  *  배너 > 짧은 건강정보 제공하는 컴포넌트
  *  데이터: 국가건강정보포털 openapi에서 parsing */
+
+
 // import slick > slider사용 위함
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+
 // import styled-components
 import styled from 'styled-components'
 // import data
@@ -13,6 +16,7 @@ const HealthInfo = () => {
     // 당일 날짜출력
     let date = new Date();
     let days = ["일", "월", "화", "수", "목", "금", "토"];
+
     // slick 속성
     const settings = {
         dots: true,
@@ -24,13 +28,16 @@ const HealthInfo = () => {
         slidesToScroll: 1
     };
     
+
     return (
+
       <StyledSlider>
         <>
         <div className="title-box">
         <h4>5대 질병 행동요령</h4>
         <p>{date.getFullYear()}/{date.getMonth()+1}/{date.getDate()} {days[date.getDay()]}</p>        
         </div> 
+
         {/* map()으로 json의 data하나씩 출력 */}
         <Slider {...settings}>
           {dailyInfo.map((list, idx)=> (
@@ -57,11 +64,9 @@ height: 200px;
 width: 100%;
 position: relative;
 border: 2px solid black;
-
 .slideList > p {
   padding: 5px 15px;
 }
-
 
 
 .slick-prev::before, .slick-next::before 

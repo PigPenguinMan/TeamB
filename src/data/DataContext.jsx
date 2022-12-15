@@ -1,10 +1,13 @@
 // 전역 Context 사용, value값도 이 파일에서 지정 후 내보내기
 import { createContext, useState } from "react";
+
 import Hospital from '../json/Hospital.json'
+
 
 const DataContext = createContext();
 
 // DataProvider를 여기서 작성 후 value값을 이미 가진 컴포넌트 내보내기
+
 const DataProvider = ({ children }) => {
     
 
@@ -58,8 +61,10 @@ const DataProvider = ({ children }) => {
     ]);
 
 
+
     // 로그인한 유저의 상태 state
     const [loginUser, setLoginUser] = useState(
+
         {
             id: 1,
             userId: "seo",
@@ -103,12 +108,15 @@ const DataProvider = ({ children }) => {
         action: { setUser, setLoginUser,setInfant, setLogin, setHcheck, setIcheck, setMesures, setIsMeasures ,setCategory,setHospitalData, setIsLoginned}
     };
 
+
     // DataProvider를 사용할 때, DataContext.Provider를 불러 사용하게끔
     // 이때, {children}은 Provider데이터를 공용으로 쓰는 컴포넌트들
     return (
+
         <DataContext.Provider value={value}>
             {children}
         </DataContext.Provider>
+
     );
 };
 

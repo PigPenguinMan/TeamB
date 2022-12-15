@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { doc,getDoc} from "firebase/firestore"
 import { db } from "../Firebase";
@@ -42,9 +43,8 @@ const MyPage = () => {
             <hr/>
             <div className="Mypage_forth"></div>
         </div>
-     );
+    );
 }
  
 export default MyPage;
-
 

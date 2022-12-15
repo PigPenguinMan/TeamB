@@ -1,3 +1,4 @@
+
 import SearchBar_Home from "../components/SearchBar";
 import Weather from "../components/Weather";
 import DataContext from "../data/DataContext";

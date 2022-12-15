@@ -4,6 +4,7 @@ import DataContext from "../data/DataContext";
 
 
 const SignUp = () => {
+
     const [userId, setUserId] = useState('');
     const [userPw, setUserPw] = useState('');
     const [username, setUsername] = useState('');
@@ -17,10 +18,12 @@ const SignUp = () => {
         alert("회원가입이 완료되었습니다. 다시 로그인해주세요");
         navigate('/home');
         localStorage.setItem(userId,userPw);
+
     };
 
     return ( 
         <div>
+
             <form onSubmit={handleSubmit}>
                 <input
                 name="userId"

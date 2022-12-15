@@ -2,6 +2,7 @@
 import { createContext, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { DataProvider } from './data/DataContext';
 import History from './pages/History';
 import Home from './pages/Home';
 import Layout from './pages/Layout';

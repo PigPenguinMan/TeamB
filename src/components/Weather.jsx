@@ -8,6 +8,7 @@ import styled from "styled-components";
 import axios from "axios";
 import { useEffect } from "react";
 
+
 const Weather = () => {
     // js처리방식 : 위>아래 라서 url과 ( 받아온 키값, 위치값) 순서가 중요함
     const API_KEY = "df39660fc891b75f918b22159e9ad35e";
@@ -82,6 +83,7 @@ export default Weather;
 
 // styled components 사용
 const WeatherWrap = styled.div`
+<<<<<<< HEAD
     width:100px;
     border-radius:8px;
     .weatherContentWrap {
