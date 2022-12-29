@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/TeamB/static/css/main.fde30640.css",
-    "main.js": "/TeamB/static/js/main.56720836.js",
+    "main.css": "/TeamB/static/css/main.d419005a.css",
+    "main.js": "/TeamB/static/js/main.c2857b08.js",
     "static/js/787.25b60adf.chunk.js": "/TeamB/static/js/787.25b60adf.chunk.js",
-    "static/media/banner1.png": "/TeamB/static/media/banner1.7ab1f47b75eb8d49375a.png",
     "static/media/major19.png": "/TeamB/static/media/major19.32e9f97f331714887cb3.png",
     "static/media/major11.png": "/TeamB/static/media/major11.0c876cc65e8e8d142f1e.png",
     "static/media/major15.png": "/TeamB/static/media/major15.093dec6541923a3931ac.png",
@@ -14,6 +13,7 @@
     "static/media/major17.png": "/TeamB/static/media/major17.f8213c2f7ab974fa3e32.png",
     "static/media/major4.png": "/TeamB/static/media/major4.6e4bdcae07f61e54de44.png",
     "static/media/major5.png": "/TeamB/static/media/major5.84a5e782505bedcb2ecd.png",
+    "static/media/hospital.png": "/TeamB/static/media/hospital.123a075d4ffc02935ea9.png",
     "static/media/major0.png": "/TeamB/static/media/major0.198514fb51cdf16232bc.png",
     "static/media/major13.png": "/TeamB/static/media/major13.b7c51c1861cc0e5e4d5f.png",
     "static/media/major8.png": "/TeamB/static/media/major8.c3a50d57b50a6f0d3d45.png",
@@ -23,7 +23,9 @@
     "static/media/major9.png": "/TeamB/static/media/major9.f8b076643e1aab1b3765.png",
     "static/media/major3.png": "/TeamB/static/media/major3.7950ce74acafe7cb94a5.png",
     "static/media/major6.png": "/TeamB/static/media/major6.0682e5e00a47b01e99d0.png",
+    "static/media/banner3.jpg": "/TeamB/static/media/banner3.74eff970d247f8c26966.jpg",
     "static/media/major14.png": "/TeamB/static/media/major14.0520f28530d4c3deb835.png",
+    "static/media/banner2.png": "/TeamB/static/media/banner2.6d28501b7a38bbbdc831.png",
     "static/media/major10.png": "/TeamB/static/media/major10.5d1bf235df3d6c29d109.png",
     "static/media/place1.png": "/TeamB/static/media/place1.c3d3dc0deeab752e8940.png",
     "static/media/slick.svg": "/TeamB/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -31,12 +33,12 @@
     "static/media/slick.ttf": "/TeamB/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TeamB/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TeamB/index.html",
-    "main.fde30640.css.map": "/TeamB/static/css/main.fde30640.css.map",
-    "main.56720836.js.map": "/TeamB/static/js/main.56720836.js.map",
+    "main.d419005a.css.map": "/TeamB/static/css/main.d419005a.css.map",
+    "main.c2857b08.js.map": "/TeamB/static/js/main.c2857b08.js.map",
     "787.25b60adf.chunk.js.map": "/TeamB/static/js/787.25b60adf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fde30640.css",
-    "static/js/main.56720836.js"
+    "static/css/main.d419005a.css",
+    "static/js/main.c2857b08.js"
   ]
 }
