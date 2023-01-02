@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TeamB/static/css/main.ae98613d.css",
-    "main.js": "/TeamB/static/js/main.9f322b05.js",
+    "main.css": "/TeamB/static/css/main.1a2eddc6.css",
+    "main.js": "/TeamB/static/js/main.3e2f951b.js",
     "static/js/787.25b60adf.chunk.js": "/TeamB/static/js/787.25b60adf.chunk.js",
     "static/media/major19.png": "/TeamB/static/media/major19.32e9f97f331714887cb3.png",
     "static/media/major11.png": "/TeamB/static/media/major11.0c876cc65e8e8d142f1e.png",
@@ -12,6 +12,7 @@
     "static/media/mydoctor.png": "/TeamB/static/media/mydoctor.6c762fd7000493045cce.png",
     "static/media/major17.png": "/TeamB/static/media/major17.f8213c2f7ab974fa3e32.png",
     "static/media/major4.png": "/TeamB/static/media/major4.6e4bdcae07f61e54de44.png",
+    "static/media/medical.png": "/TeamB/static/media/medical.8f9e74d72991f40c1562.png",
     "static/media/major5.png": "/TeamB/static/media/major5.84a5e782505bedcb2ecd.png",
     "static/media/hospital.png": "/TeamB/static/media/hospital.123a075d4ffc02935ea9.png",
     "static/media/major0.png": "/TeamB/static/media/major0.198514fb51cdf16232bc.png",
@@ -20,6 +21,7 @@
     "static/media/major16.png": "/TeamB/static/media/major16.b923dd2a278ab7a108c0.png",
     "static/media/major18.png": "/TeamB/static/media/major18.cd020cc03e3b550653e9.png",
     "static/media/major7.png": "/TeamB/static/media/major7.6a23ad17d5b1c4bfcd26.png",
+    "static/media/medical2.png": "/TeamB/static/media/medical2.bfb4aa9c56502df52903.png",
     "static/media/major9.png": "/TeamB/static/media/major9.f8b076643e1aab1b3765.png",
     "static/media/major3.png": "/TeamB/static/media/major3.7950ce74acafe7cb94a5.png",
     "static/media/major6.png": "/TeamB/static/media/major6.0682e5e00a47b01e99d0.png",
@@ -33,12 +35,12 @@
     "static/media/slick.ttf": "/TeamB/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TeamB/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TeamB/index.html",
-    "main.ae98613d.css.map": "/TeamB/static/css/main.ae98613d.css.map",
-    "main.9f322b05.js.map": "/TeamB/static/js/main.9f322b05.js.map",
+    "main.1a2eddc6.css.map": "/TeamB/static/css/main.1a2eddc6.css.map",
+    "main.3e2f951b.js.map": "/TeamB/static/js/main.3e2f951b.js.map",
     "787.25b60adf.chunk.js.map": "/TeamB/static/js/787.25b60adf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae98613d.css",
-    "static/js/main.9f322b05.js"
+    "static/css/main.1a2eddc6.css",
+    "static/js/main.3e2f951b.js"
   ]
 }
