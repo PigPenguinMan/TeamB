@@ -19,7 +19,7 @@ const History = () => {
     } else if (data.state.mypageData2) {
         data.action.setTreatmentDetail(data.state.mypageData2);
     }
-    console.log(data.state.h_name);
+
 
 
     return (
