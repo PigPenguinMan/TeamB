@@ -18,13 +18,13 @@ import { db } from '../Firebase';
 const Notice = () => {
     const data = useContext(DataContext);
     const infant = localStorage.getItem("currentInfant")
-    const docRef = doc(db, "infant", infant);
 
     const [temp1,setTemp1] = useState("");
 
     const [temp1_name, setTemp1_name] = useState("");
 
     const getInfantName = async () => {
+        const docRef = doc(db, "infant", infant);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
         setName(docSnap.data().name);
@@ -35,6 +35,7 @@ const Notice = () => {
     },[infant])
 
     const getInfantTemp = async () => {
+        const docRef = doc(db, "infant", infant);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             setTemp1(docSnap.data().temperature);

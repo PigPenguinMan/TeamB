@@ -3,11 +3,14 @@ import '../css/Opening.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { keyframes } from 'styled-components';
+import { useEffect } from 'react';
 
 const Opening = () => {
     const navigate = useNavigate()
-
-    
+    const localStorageClear = ()=>{
+        localStorage.clear();
+    }
+    useEffect(()=>{localStorageClear()},[])
 
     return (
         <>

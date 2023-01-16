@@ -1,20 +1,21 @@
 const initialState = {
-    height : [
-        {height_id:1, date:"", input:""}
+
+    measuresData : [
     ]
 }
-let height_id = 2;
 function measures(state = initialState, action){
     switch(action.type) {
-        case "addHeight" :
-            const newHeight = {...action.payload, height_id:height_id}
-            height_id++;
-            const newHeightArr = state.height.concat(newHeight);
-            return newHeightArr
+        case "addMeasure" :
+            const newMeasure = {...action.payload}
+            const newMeasureArr = state.measuresData.concat(newMeasure);
+            return {...state, measuresData:newMeasureArr}
+
         default:
             return state
     }
 }
-export const addHeight =(height)=> ({type:"addHeight", payload:height});
+
+export const addMeasure =(measures)=> ({type:"addMeasure", payload:measures});
+
 
 export default measures;
