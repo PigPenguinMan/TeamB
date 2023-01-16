@@ -2,28 +2,18 @@ import { useContext, useState } from "react";
 import DataContext from "../data/DataContext";
 
 import '../css/health_Modal.css'
-import { doc, getDoc, setDoc, Timestamp, updateDoc } from "firebase/firestore";
+import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../Firebase";
-import { useDispatch, useSelector } from "react-redux";
-import { addHeight } from "../modules/measures";
 
 const Health_Modal = (props) => {
-    const height = useSelector((state)=>(state.measures))
-    console.log(height)
-    const dispatch = useDispatch();
-    const newheight = (e) => {
-        dispatch(addHeight({[e.target.name]:input,date:new Date()}))
-    }
-
     const data = useContext(DataContext)
     const infant = localStorage.getItem("currentInfant")
     const infantRef = doc(db, "infant", infant)
     const [show,setShow] = useState(0);
     const [input,setInput] = useState("");
     const setMeasures = async (e) => {
-        const inputdata = (await getDoc(doc(db,"infant",infant))).data()
         await updateDoc(infantRef, {
-            [e.target.name]: [...inputdata.height,input]
+            [e.target.name]: input
         });
         setShow(0)
     }
