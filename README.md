@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+## MY DOCTOR
+ **MY DOCTOR**는 
+ 핸드폰으로 병원예약 또는 관리 , 건강관리를 도와주는  **모바일웹**입니다
+ 
+ **모바일크기**로 제작되어 일반 PC화면크기에는 적합하지않습니다 
+ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 멤버
+![github](./ReadMe_img/github.svg)
+- 팀장 공희성(bigpenguinman@naver.com) 
+[![github](./ReadMe_img/github.svg)](https://github.com/PigPenguinMan)
 
-## Available Scripts
+- 김지현(jihyeonkim1@naver.com)
+[![github](./ReadMe_img/github.svg)](https://github.com/wooodii)
 
-In the project directory, you can run:
+- 박서아(naeil_do@naver.com)
+[![github](./ReadMe_img/github.svg)](https://github.com/sophy97)
 
-### `npm start`
+- 박종헌(whdgjs7300@naver.com)
+[![github](./ReadMe_img/github.svg)](https://github.com/whdgjs7300)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 조창욱(sheepdog13@naver.com)
+[![github](./ReadMe_img/github.svg)](https://github.com/sheepdog13)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# 사용기술
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![HTML5](./ReadMe_img/html5.svg)
+![CSS3](./ReadMe_img/css3.svg)
+![JAVASCRIPT](./ReadMe_img/javascript.svg)
 
-### `npm run build`
+![REACT](./ReadMe_img/react.svg)
+![REDUX](./ReadMe_img/redux.svg)
+![FIREBASE](./ReadMe_img/firebase.svg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 링크 
+https://pigpenguinman.github.io/TeamB/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 주요 기능 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.회원가입 , 로그인 
 
-### `npm run eject`
+- Firebase를 이용해 회원가입 및 로그인 
+- 로그인 상태에 따라 페이지 구분 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.병원 찾기 , 예약, 병원 별점 및 리뷰
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 2가지 방법의 병원 찾기 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 각각의 병원정보에따라 페이지에 표시 , 지도 표시 
+- 병원페이지별로 별점 및 후기 작성,표시   
 
-## Learn More
+- 병원 예약시 예약내역표시
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3.복약 관리 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+- 현재 먹는 약 등록 각각 복용여부 체크 
+- 전부 복용 체크시 오늘의 복약 완료 표새 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4.건강 피드 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 등록한 정보에 따라 간단한 건강 피드백
+ 

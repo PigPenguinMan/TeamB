@@ -4,7 +4,12 @@ base module의 버튼 디자인 및 색상값과 최대한 맞춰서 작성*/
     margin: 45px 50px;
 }
 
-.alarm {margin: 5px 10px;}
+.alarm {
+    margin: 2px 6px;
+    padding: 25px 10px;
+    border: 2px solid #1b4542b6;
+    border-radius: 8px;
+}
 .addMed-btn {
     position:relative;
     float: right;
@@ -30,17 +35,8 @@ base module의 버튼 디자인 및 색상값과 최대한 맞춰서 작성*/
 }
 .intro-ment {
     text-align: center;
-    margin: 8px 0px;
-    background-color: rgb(183, 207, 198);
-    border-radius: 10px;
-    padding: 5px 5px;
 }
-.date span {
-    color: white;
-    background-color: #1b4542;
-    padding: 4px 8px;
-    border-radius: 50px;
-}
+
 
 .goback {
     position: absolute; top: 0; left: 10px; color: #ccc; font-size: 20px;

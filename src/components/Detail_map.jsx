@@ -15,6 +15,7 @@ const ReserveMap = (props) => {
         let callback = function (result, status) {
             if (status === kakao.maps.services.Status.OK) {
                 const newAddress = result[0]
+                console.log(newAddress);
                 setState({
                     center: { lat: newAddress.y, lng: newAddress.x }
                 })

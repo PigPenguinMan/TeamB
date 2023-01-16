@@ -12,8 +12,7 @@ import mydoctor from '../../src/img/mydoctor.png'
 import { FcPuzzle, FcApproval,FcBiomass, FcPlus } from "react-icons/fc";
 import { IconContext } from "react-icons";
 import medical3 from '../img/medical3.png';
-import medical2 from '../img/medical2.png';
-
+import {motion} from 'framer-motion'
 const Home = () => {
     const data = useContext(DataContext);
     const [name, setName] = useState();
@@ -59,9 +58,13 @@ const Home = () => {
     }
 
     return ( 
-        <Container className="Home" style={{position: "relative", maxWidth : "420px", height : "100vh"}}>
-
-                    <Row className="Search_box" style={{marginBottom : "1em", marginTop : "2em", display : "flex"}}>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{delay:0.4, duration:0.4}}
+        >
+        <Container className="Home" style={{position: "relative", maxWidth : "420px", height : "100vh" , overflow:'hidden' /* 01/09 overflow 추가 - home */ }}>
+                    <Row className="Search_box" style={{marginBottom : "1em", marginToxp : "2em", display : "flex"}}>
                         <Col xs={1}> 
                             <img style={{width : "33px", marginTop : "17px"}} src={mydoctor} alt="image"/>
                         </Col>
@@ -72,9 +75,16 @@ const Home = () => {
                     <div style={{height : "120px", zIndex : "999", display : "relative", marginTop :"10px", fontSize : "22px", borderRadius : "10px", position : "relative", backgroundColor : "#eee", padding : "0px"}}>                        
                        <Row style={{marginLeft : "0px", borderRadius : "10px"}}>
                             <Col xs={7}>
-                            <p style={{ fontSize : "20px", marginTop : "30px", marginLeft : "20px"}}>
+                            {
+                            /* ------- */
+                            // p태그 안의 p태그 , p태그안의 div태그 수정 01/09 15:18 
+                            }
+                            <div style={{ fontSize : "20px", marginTop : "30px", marginLeft : "20px"}}>
                             <b>{name} </b> 님, <br/>
-                            <p style={{fontSize : "18px"}}>건강한 하루 되세요! </p> </p>
+                            <p style={{fontSize : "18px"}}>건강한 하루 되세요! </p> </div>
+                            {
+                            /* -------- */
+                            }
                             </Col>
                             <Col xs={3}>
                             {/* <img src={medical} width= "100px" height="110px" alt="" /> */}
@@ -85,8 +95,6 @@ const Home = () => {
                             </Col>
                         </Row>
                     </div>
-                        
-                    
                     <Row style={{display : "flex", marginLeft : "3px", marginTop : "20px"}}>
                         <div onClick={() => (navigate('/main'))} style={{display : "relative",backgroundColor : "#eee", borderRadius : "10px", width : "80px", height : "70px", margin : "5px 5px 5px 5px"}}>
                         <IconContext.Provider value={{ size : "2em" }}>
@@ -117,7 +125,6 @@ const Home = () => {
                             <p style={{ fontSize :"13px", marginLeft : "3px", color : "black"}}>건강정보 </p>    
                         </a>
                     </Row>
-
                     <hr/>
                     <Row className="Temperature">
                         <h6 style={{marginLeft : "0.5em", fontSize : "1.3em", marginTop : "0px", fontSize : "17px"}}>
@@ -144,6 +151,7 @@ const Home = () => {
                         onClick={() => (navigate('/filter'))}>
                         <p style={{textAlign : "center", fontSize : "15px"}}>  병원 찾기</p> </button>
         </Container>
+        </motion.div>
     );
 }
 export default Home;

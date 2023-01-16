@@ -4,11 +4,12 @@ import { useContext, useState } from "react";
 import DataContext from "../data/DataContext";
 import styles from "../css/history.module.css"
 import Banner from "../components/Banner";
- 
+import {motion} from 'framer-motion'
 
 
 const History = () => {
     const data = useContext(DataContext);
+
     const navigate = useNavigate();
     const navFilter = () => {
         navigate('/filter');
@@ -19,11 +20,17 @@ const History = () => {
     } else if (data.state.mypageData2) {
         data.action.setTreatmentDetail(data.state.mypageData2);
     }
-    console.log(data.state.h_name);
+
 
 
     return (
+<motion.div 
+        initial={{opacity:0}}
+        
+        animate={{opacity:1}}
 
+        transition={{delay: 0.4,duration:0.4  }}
+        >
         <div className="History_Page">
 
             <div className={styles.box3}>                
@@ -48,7 +55,7 @@ const History = () => {
                         <p>{data.state.treatmentDetail.영업상태}</p>
                         <hr />
                         <button className={styles.btn} onClick={()=>{
-                        window.location.reload();
+                        data.action.setIsbook(false)
                         alert('예약이 취소되었습니다.')
                         }}>예약취소</button>    
                             </div> 
@@ -100,6 +107,7 @@ const History = () => {
                 </>
             </div>
         </div>
+        </motion.div>
     );
 }
 export default History;

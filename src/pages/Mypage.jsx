@@ -10,6 +10,7 @@ import { faSquareParking } from "@fortawesome/free-solid-svg-icons";
 import { Col, Container, Row } from "react-bootstrap";
 import "../css/Mypage.css";
 import ProfileUpdateModal from "../components/ProfileUpdateModal";
+import {motion} from 'framer-motion'
 
 
 const MyPage = () => {
@@ -43,7 +44,12 @@ const MyPage = () => {
   const [show,setShow] = useState(false);
   
   return (
+<motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
 
+        transition={{delay:0.4, duration:0.4}}
+        >
     <div className="Mypage">
       {data.state.isLoginned ? (
         <>
@@ -179,6 +185,7 @@ const MyPage = () => {
         </>
       )}
     </div>
+    </motion.div>
   );
 
 }

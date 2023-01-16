@@ -29,21 +29,25 @@ import EditProfile from './pages/EditProfile';
 import SearchNear from './components/SearchNear';
 import Reservation2 from './components/Reservation2';
 import Opening from './pages/Opening';
+import { useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App ">  
       <DataProvider>
-        <Routes>
+        <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
             <Route index element={<Opening/>}></Route>
           <Route path='/' element={<Layout />}>
             <Route path='/home' element={<Home/>} />
             <Route path='/history' element={<History />} />
             <Route path='/mypage' element={<MyPage />} />
-            <Route path='/review' element={<Review />}></Route>
           </Route>
+            <Route path='/review' element={<Review />}></Route>
             <Route path='/searchhospital' element={<SearchBar />}/>
             <Route path='/loginc' element={<Login_C />} />
             <Route path='/question' element={<Question/>}/>
@@ -61,8 +65,8 @@ function App() {
             <Route path='/medicine' element={<Medicine/>}></Route>
             <Route path='/reservation2' element={<Reservation2/>}></Route>
             <Route path='/detailinfo' element={<DetailInfo />}></Route>
-
         </Routes>
+        </AnimatePresence>
       </DataProvider>
     </div>
 
