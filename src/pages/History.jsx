@@ -9,6 +9,7 @@ import {motion} from 'framer-motion'
 
 const History = () => {
     const data = useContext(DataContext);
+
     const navigate = useNavigate();
     const navFilter = () => {
         navigate('/filter');
@@ -23,7 +24,7 @@ const History = () => {
 
 
     return (
-<motion.div
+<motion.div 
         initial={{opacity:0}}
         
         animate={{opacity:1}}
@@ -54,7 +55,7 @@ const History = () => {
                         <p>{data.state.treatmentDetail.영업상태}</p>
                         <hr />
                         <button className={styles.btn} onClick={()=>{
-                        window.location.reload();
+                        data.action.setIsbook(false)
                         alert('예약이 취소되었습니다.')
                         }}>예약취소</button>    
                             </div> 
