@@ -8,8 +8,10 @@ import checkUp from "./CheckUp";
 import growth from "./Growth";
 import temperature from "./Temperature";
 import medicine from "./medicine";
+import measures from "./measures";
+
 
 // 작성한리덕스를 객체로 묶어서 내보냄
-const rootReducer = combineReducers({healthChart, checkUp, growth, temperature, medicine });
+const rootReducer = combineReducers({healthChart, checkUp, growth, temperature, medicine,measures });
 
 export default rootReducer;

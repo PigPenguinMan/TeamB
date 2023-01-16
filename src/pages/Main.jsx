@@ -11,8 +11,8 @@ const Main = () => {
     const user = localStorage.getItem("currentUser")
     // 아이유무 함수
     const ischeckInfant = async () => {
-        const docSnap = await getDoc(docRef);
         const docRef = doc(db, "infant", user);
+        const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             data.action.setLogin(true)
             localStorage.setItem("currentInfant",user)
